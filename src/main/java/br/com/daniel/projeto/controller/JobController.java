@@ -14,10 +14,10 @@ import br.com.daniel.projeto.service.JobService;
 @RestController
 @RequestMapping("/jobs")
 public class JobController {
-
+	
 	@PostMapping
 	public List<List<Job>> recebeJobs(@RequestBody List<Job> jobs) {
-		JobService service =  new JobService();
+		JobService service = new JobService();
 		return service.ordenaJobs(jobs);
 	}
 	
@@ -25,4 +25,5 @@ public class JobController {
 	public Integer adicionarJob() {
 		return 1;
 	}
+	
 }
