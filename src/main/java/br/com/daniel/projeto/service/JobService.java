@@ -17,7 +17,7 @@ public class JobService {
 		if (this.validaTempoDosJobs(janelaExecucao)) {
 			listaFinal.addAll(this.trataListaDeJobs(janelaExecucao));
 		} else {
-			throw new Exception("Janela curta demais para executar");
+			throw new Exception("Janela curta demais para executar todos os jobs");
 		}
 
 		return listaFinal;
